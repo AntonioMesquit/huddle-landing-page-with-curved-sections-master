@@ -414,12 +414,19 @@ footer{
     .butons{
         flex-direction: column;
     }
-    
+    .top-1-mobile, .top-2-mobile, .buttom-1-mobile,.buttom-2-mobile,.div-footer-mobile{
+        display: block;
+        width: 100%;
+    }
 }
 @media screen and (max-width: 500px){
     .text-last{
         text-align: center;
     }
+    .top-1-mobile, .top-2-mobile, .buttom-1-mobile,.buttom-2-mobile,.div-footer-mobile{
+        display: block;
+        width: 100%;
+    } 
     .ima{
         width: 350px;
     }
