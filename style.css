@@ -5,12 +5,15 @@ font-family: 'Poppins', sans-serif;*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: 3s;
+    transition: 0.5s;
 }
 body{
-  
+   
     display: flex;
-    height: 5000px;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     font-family: 'Open Sans', sans-serif;
     flex-direction: column;
 
@@ -42,9 +45,10 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 50px;
 }
 .cabeca{
-   width: 1100px;
+   width: 100%;
    margin-bottom: 200px;
  
 }
@@ -153,7 +157,7 @@ margin-bottom: 20px;
     align-items: center;
     justify-content: space-around;
     text-align: start;
-    width: 1200px;
+    width: 500px;
 }
 .top-2, .buttom-2{
     height: 200px;
@@ -175,6 +179,198 @@ margin-bottom: 20px;
     width: 100%;
     height: 400px;
 }
-.text-last{
+.text-last h1{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+.last-section a{
+ text-decoration: none;
+ color: white;
+ background-color: rgb(253, 83, 192);
+ padding: 20px 80px 20px 80px;
+ border-radius: 30px;
+ box-shadow: 0px 0px 3px 3px hsla(322, 100%, 66%, 0.298);
+ font-weight: 700;
+}
+
+.div-footer{
+    height: 200px;
+    width: 100%;
+    background-image: url(images/bg-footer-top-desktop.svg);
+    background-size: 100% 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+}
+footer{
+    background-color: rgb(0, 37, 46);
+    height: 500px;
+    display: flex;
+    width: 100%;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+.logo {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg)
+    brightness(200%);
+    margin-bottom: 25px;
+  }
+  .icons i{
+    color: white;
+    font-size: 40px;
+
+  }
+  .contacts{
+    color: white;
+    margin-bottom: 70px;
+  }
+  .email,.phone{
+    display: flex;
+  }
+  .statistic{
+    width: 500px;
+  }
+  .cont{
+    width: 500px;
+    height: 334px;
+  }
+  .text-lastx{
+    margin-bottom: 25px;
+  }
+  .phone{
+    margin-bottom: 20px;
+  }
+  .phone p , .email p{
+    padding-left: 15px;
+  }
+  .fa-facebook-square{
+    margin-right: 20px;
+  }
+  .fa-instagram{
+    padding-right: 20px;
+  }
+  .txx h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .txx p{
+    margin-bottom: 35px;
+  }
+  input {
+    padding: 15px 65px 15px 65px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 30px;
+  }
+  .butons{
+    display: flex;
+
+  }
+  .butons a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(253, 83, 192);
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar{
+    width: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.217);
+    border-radius: 30px;
+    
+    width: 50px;
+    
+  }
+  .td{
+    width: 100%;
+  }
+@media screen and (max-width: 1200px){
+    
+    .conteudo h1{
+        font-size: 30px;
+    }
+    .conteudo p{
+        font-size: 20px;
+    }
+    .ima{
+        width: 550px;
+    }
+    .static{
+        flex-direction: column;
+    }
+    .image1,.image2{
+        flex-direction: center;
+      justify-content: center;
+    }
+    .s1{
+        margin-right: 0px;
+    }
+
+ 
+    .tst{
+        flex-direction: column;
+        height: 500px;
+    }
+    .text-2{
+        margin-right: 0;
+       
+    }
+    .ts{
+        flex-direction: column-reverse;
+        height:500px;
+    }
+    .top-1,.top-2,.buttom-1,.buttom-2,.div-footer{
+        display: none;
+    }
+    .section-3{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .text-2 h1{
+        text-align: center;
+    }
+    .section-2, .section-3{
+        height: 500px;
+    }
+    footer{
+        flex-direction: column-reverse;
+        height: 700px;
+    }
+   
   
+    
+}
+@media screen and (max-width: 500px){
+    .ima{
+        width: 350px;
+    }
+    .text-2{
+        width: 60%;
+    }
+    .text-2 h1{
+        font-size: 30px
+    }
+    .text-2 p{
+        font-size: 14px;
+    }
+    .butons{
+        flex-direction: column;
+    }
+    .ts{
+        width: 350px;
+    }
 }
