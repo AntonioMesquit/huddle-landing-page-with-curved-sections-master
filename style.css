@@ -107,6 +107,21 @@ main{
         
    
 }
+.top-1-mobile{
+    height: 100px;
+    width: 100%;
+    background-image: url(images/bg-section-top-mobile-1.svg);
+    background-size: 100% 100%;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+.buttom-1-mobile{
+    height: 80px;
+    width: 100%;
+    background-size: 100% 100%;
+    background-image: url(images/bg-section-bottom-mobile-1.svg);
+}
+
 .section-2, .tst{
     background-color: rgb(246, 251, 255);
     width: 100%;
@@ -132,6 +147,10 @@ main{
 }
 .img3{
     height: 350px;
+  
+}
+.image4{
+    margin-right: 250px;
 }
 .text-2 h1{
 
@@ -160,11 +179,25 @@ margin-bottom: 20px;
     width: 500px;
 }
 .top-2, .buttom-2{
-    height: 200px;
     width: 100%;
     background-image: url(images/bg-section-top-desktop-2.svg);
     background-size: 100% 100%;
     height: 120px;
+    background-repeat: no-repeat;
+}
+.top-2-mobile{
+    height: 50px;
+    width: 100%;
+    background-image: url(images/bg-section-top-mobile-2.svg);
+    background-size: 100% 100%;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+.buttom-2-mobile{
+    width: 100%;
+    background-image: url(images/bg-section-bottom-mobile-2.svg);
+    background-size: 100% 100%;
+    height: 80px;
     background-repeat: no-repeat;
 }
 
@@ -202,6 +235,13 @@ margin-bottom: 20px;
     height: 200px;
     background-repeat: no-repeat;
 }
+.div-footer-mobile{
+    width: 100%;
+    background-image: url(images/bg-footer-top-mobile.svg);
+    background-size: 100% 100%;
+    height: 70px;
+    background-repeat: no-repeat;
+}
 footer{
     background-color: rgb(0, 37, 46);
     height: 500px;
@@ -212,6 +252,9 @@ footer{
     align-items: center;
     
     
+}
+.top-1-mobile, .top-2-mobile, .buttom-1-mobile,.buttom-2-mobile,.div-footer-mobile{
+    display: none;
 }
 .logo {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(125deg)
@@ -231,10 +274,11 @@ footer{
     display: flex;
   }
   .statistic{
-    width: 500px;
+    width: 100%;
+    margin-left: 350px;
   }
   .cont{
-    width: 500px;
+    width: 100%;
     height: 334px;
   }
   .text-lastx{
@@ -269,6 +313,7 @@ footer{
   }
   .butons{
     display: flex;
+    align-items: center;
 
   }
   .butons a {
@@ -298,8 +343,14 @@ footer{
   .td{
     width: 100%;
   }
+  
 @media screen and (max-width: 1200px){
-    
+    .text-2{
+        text-align: center;
+    }
+    .top-1-mobile, .top-2-mobile, .buttom-1-mobile,.buttom-2-mobile,.div-footer-mobile{
+        display: block;
+    }
     .conteudo h1{
         font-size: 30px;
     }
@@ -317,6 +368,9 @@ footer{
       justify-content: center;
     }
     .s1{
+        margin-right: 0px;
+    }
+    .image4{
         margin-right: 0px;
     }
 
@@ -351,10 +405,21 @@ footer{
         height: 700px;
     }
    
-  
+  .statistic{
+    margin-left: 0px;
+  }
+    
+}
+@media screen and (max-width:800px){
+    .butons{
+        flex-direction: column;
+    }
     
 }
 @media screen and (max-width: 500px){
+    .text-last{
+        text-align: center;
+    }
     .ima{
         width: 350px;
     }
@@ -372,5 +437,59 @@ footer{
     }
     .ts{
         width: 350px;
+    }
+    .img3{
+        width: 250px;
+        height: 200px;
+    }
+    .conteudo h1{
+        font-size: 16px;
+      }
+      .conteudo p{
+        font-size: 12px;
+      }
+      header{
+        margin-bottom: 50px;
+        flex-direction: column;
+      }
+      .img{
+        margin-bottom: 30px;
+      }
+      .last-section a{
+        padding: 20px 50px 20px 50px;
+      }
+      .txx {
+        padding: 25px;
+      }
+      .txx h1{
+        font-size: 20px;
+      }
+      .txx p {
+        font-size: 13px;
+      }
+      .statistic{
+        padding: 25px;
+      }
+      input{
+        margin-bottom: 25px;
+      }
+      .b2{
+        margin-left: 140px;
+      }
+      .logo{
+        width: 120px;
+      }
+      .text-lastx p{
+        font-size: 13px;
+      }
+      .s1 h1, .s2 h1{
+        font-size: 70px;
+      }
+
+}
+@media screen and (max-width: 357px){
+    .buto{
+        width: 250px;
+        margin-left: 100px;
     }
 }
