@@ -5,11 +5,12 @@ font-family: 'Poppins', sans-serif;*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 3s;
 }
 body{
   
     display: flex;
-    height: 100vh;
+    height: 5000px;
     font-family: 'Open Sans', sans-serif;
     flex-direction: column;
 
@@ -43,7 +44,12 @@ main{
     text-align: center;
 }
 .cabeca{
-   width: 100%;  
+   width: 1100px;
+   margin-bottom: 200px;
+ 
+}
+.conteudo{
+    margin-bottom: 150px;
 }
 .conteudo h1{
     font-size: 50px;
@@ -63,4 +69,112 @@ main{
     font-weight: 600;
     font-size: 16px;
     border-radius: 30px;
+    
+}
+.ima{
+    margin-bottom: 100px;
+}
+.static{
+    display: flex;
+    justify-content: space-around;
+}
+.s1 h1 , .s2 h1{
+    font-size: 100px;
+}
+.s1 p, .s2 p {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.65);
+}
+.image1, .image2{
+    display: flex;
+ 
+}
+.s1{
+    margin-right: 6%;
+  
+}
+.top-1, .buttom-1{
+        height: 200px;
+        width: 100%;
+        background-image: url(images/bg-section-top-desktop-1.svg);
+        background-size: 100% 100%;
+        height: 180px;
+        background-repeat: no-repeat;
+        
+   
+}
+.section-2, .tst{
+    background-color: rgb(246, 251, 255);
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: start;
+}
+.buttom-1{
+    background-image: url(images/bg-section-bottom-desktop-1.svg);
+    margin-bottom: 50px;
+    
+}
+.text-2{
+ 
+     width: 500px;
+     margin-right: 100px;
+   
+}
+.cont-image{
+
+}
+.img3{
+    height: 350px;
+}
+.text-2 h1{
+
+font-family: 'Poppins', sans-serif;;
+font-size: 40px;
+text-align: start;
+margin-bottom: 20px;
+}
+.text-2 p{
+    font-weight: 600;
+    font-size: 15px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.65);
+}
+.tst{
+    width: 1200px;
+    display: flex;
+}
+.ts{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: start;
+    width: 1200px;
+}
+.top-2, .buttom-2{
+    height: 200px;
+    width: 100%;
+    background-image: url(images/bg-section-top-desktop-2.svg);
+    background-size: 100% 100%;
+    height: 120px;
+    background-repeat: no-repeat;
+}
+
+.buttom-2{
+    background-image: url(images/bg-section-bottom-desktop-2.svg);
+}
+.last-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+.text-last{
+  
 }
